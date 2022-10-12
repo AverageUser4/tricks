@@ -1,3 +1,19 @@
+@use '../var';
+
 .website-content {
-  padding: 24px;
+  max-width: var.$max-width;
+  margin: auto;
+  padding: 16px;
+}
+
+@media(min-width: 800px) {
+  .website-content {
+    padding: 32px 24px;
+  }
+}
+
+@media(min-width: 1100px) {
+  .website-content {
+    padding: 48px 24px;
+  }
 }

@@ -1,6 +1,6 @@
 @use '../var';
 
-.generic-link {
+.link {
   color: var.$light-blue;
   text-decoration: none;
 
@@ -9,6 +9,10 @@
   }
 }
 
-.generic-link--color-2 {
+.link--color-2 {
   color: var.$orange;
+}
+
+.link--color-3 {
+  color: rgb(0, 0, 0);
 }

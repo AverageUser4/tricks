@@ -1,0 +1,143 @@
+@use '../var';
+
+.article-preview {
+  margin: 32px 0;
+
+  background-color: rgb(255, 255, 255);
+  border-radius: var.$border-radius;
+}
+
+.article-preview__image-link {
+  display: block;
+}
+
+.article-preview__image {
+  display: block;
+  width: 100%;
+  height: 200px;
+
+  border-radius: var.$border-radius var.$border-radius 0 0;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.article-preview-text-part {
+  padding: 20px;
+}
+
+.article-preview__list {
+  font-size: 9.25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Primer;
+}
+
+.article-preview__text {
+  margin-bottom: 24px;
+
+  font-size: 17px;
+  line-height: 180%;
+  color: rgb(71, 71, 71);
+}
+
+.article-preview__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: rgb(71, 71, 71);
+}
+
+.article-preview__author {
+  font-size: 14px;
+}
+
+.article-preview__author-image {
+  display: block;
+  width: 40px;
+
+  border-radius: 50%;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.article-preview__author-name {
+  font-weight: bold;
+}
+
+@media(min-width: 800px) {
+  .article-preview--big {
+    display: flex;
+    align-items: center;
+    height: 650px;
+  }
+
+  .article-preview__image-link {
+    width: 50%;
+    height: 100%;
+    align-self: stretch;
+
+    flex-shrink: 0;
+  }
+
+  .article-preview__image {
+    height: 100%;
+
+    border-radius: var.$border-radius 0  0 var.$border-radius;
+  }
+
+  .article-preview__image-link {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      width: 120%;
+      height: 100%;
+
+      background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+      border-radius: var.$border-radius;
+      
+      opacity: .75;
+      pointer-events: none;
+      mix-blend-mode: screen;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 40%;
+      height: 100%;
+
+      background-image: linear-gradient(90deg, transparent, rgb(255, 255, 255));
+
+      pointer-events: none;
+    }
+  }
+
+  .article-preview__list {
+    font-size: 12px;
+  }
+
+  .article-preview-text-part {
+    padding: 32px 32px 32px 0;
+    z-index: 1;
+  }
+
+  .article-preview__text {
+    font-size: 20px;
+  }
+}
+
+@media(min-width: 1000px) {
+  .article-preview__image-link {
+    width: 60%;
+  }
+}

@@ -3,8 +3,8 @@
 .search-button {
   position: fixed;
   top: 12px;
-  // 48px = 'padding' + width
-  left: calc(100% - 48px);
+  // 56px = 'padding' + width
+  left: calc(100% - 56px);
   z-index: 5;
 
   width: 32px;
@@ -13,12 +13,11 @@
 
   border: none;
   background-color: transparent;
-  //box-shadow:...
-
-  opacity: 0.7;
+  border-radius: 50%;
+  filter: drop-shadow(rgba(0, 0, 0, 0.3) 0px 2px 5px);
 
   &:hover {
-    opacity: 1;
+    opacity: 0.8;
     cursor: pointer;
   }
 }
@@ -29,6 +28,12 @@
 
 @media(min-width: var.$max-width) {
   .search-button {
-    left: calc(100% - 48px + (1500px - 100%) / 2);
+    left: calc(100% - 56px + (1500px - 100%) / 2);
+  }
+}
+
+@media(min-width: calc(var.$max-width + 64px)) {
+  .search-button {
+    left: calc(100% - 32px + (1500px - 100%) / 2);
   }
 }
