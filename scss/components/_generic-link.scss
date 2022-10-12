@@ -1,0 +1,14 @@
+@use '../var';
+
+.generic-link {
+  color: var.$light-blue;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.generic-link--color-2 {
+  color: var.$orange;
+}

@@ -1,0 +1,51 @@
+@use '../var';
+
+.sponsors-promo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+
+  padding: 20px;
+  max-width: var.$max-width;
+  margin: auto;
+  box-sizing: border-box;
+  
+  background-color: rgb(255, 255, 255);
+  border-radius: var.$primary-border-radius;
+}
+
+.sponsors-promo__logo {
+  display: inline-block;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.sponsors-promo__image {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+}
+
+.sponsors-promo__text {
+  margin: 0;
+  
+  font-size: 14px;
+  line-height: 180%;
+  font-family: serif;
+}
+
+@media(min-width: 1000px) {
+  .sponsors-promo {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .sponsors-promo__image {
+    min-width: 400px;
+    max-width: 500px;
+  }
+}

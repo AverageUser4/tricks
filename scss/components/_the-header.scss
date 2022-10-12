@@ -1,0 +1,39 @@
+@use '../var';
+
+.the-header {
+  background-color: rgb(17 17 17);
+  border-bottom: 1px solid rgb(103 103 103);
+
+  padding: 16px 16px 0 16px;
+}
+
+.the-header-content {
+  display: flex;
+  flex-flow: column;
+  gap: 8px 48px;
+
+  position: relative;
+
+  max-width: var.$max-width;
+  margin: auto;
+}
+
+@media(min-width: 1140px) {
+  .the-header {
+    padding-bottom: 16px;
+  }
+
+  .the-header-content {
+    flex-flow: row;
+    align-items: center;
+
+    .basic-nav__list {
+      overflow: visible;
+    }
+
+    .basic-nav__link {
+      display: inline;
+      padding: 24px 12px 21px;
+    }
+  }
+}
