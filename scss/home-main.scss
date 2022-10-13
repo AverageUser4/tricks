@@ -1,10 +1,13 @@
 @use 'global';
 
-@use 'components/article-preview';
-@use 'components/basic-nav';
 @use 'components/heading';
-@use 'components/horizontal-list';
 @use 'components/link';
+
+@use 'components/article-preview';
+@use 'components/author';
+@use 'components/basic-nav';
+@use 'components/fancy-cards';
+@use 'components/horizontal-list';
 @use 'components/logo';
 @use 'components/search-button';
 @use 'components/sponsors-promo';

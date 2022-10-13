@@ -8,3 +8,16 @@
 
   list-style: none;
 }
+
+.horizontal-list--stylish {
+  font-size: 9.25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Primer;
+}
+
+@media(min-width: 800px) {
+  .horizontal-list--stylish {
+    font-size: 12px;
+  }
+}

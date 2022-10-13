@@ -1,0 +1,22 @@
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 16px;
+}
+
+.author__name {
+  font-weight: bold;
+}
+
+.author__picture {
+  display: block;
+  width: 40px;
+
+  border-radius: 50%;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
