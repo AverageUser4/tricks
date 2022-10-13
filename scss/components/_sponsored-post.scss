@@ -1,0 +1,42 @@
+@use '../var';
+
+.sponsored-post {
+  padding: 12px;
+
+  font-size: 12px;
+  background-color: rgb(255, 255, 255);
+  border-radius: var.$border-radius;
+}
+
+.sponsored-post__image {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+
+  border-radius: var.$border-radius;
+  box-shadow: 0 0 50px rgba(17,17,17,.5);
+
+  transition: 300ms;
+
+  &:hover {
+    opacity: 0.8;
+    transform: rotateZ(-4deg) translateY(-6px);
+  }
+}
+
+.sponsored-post__sponsored-span {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: var.$light-blue;
+}
+
+.sponsored-post__text {
+  margin: 4px 0 0;
+  line-height: 160%;
+}
+
+.sponsored-post__accent {
+  font-family: monospace;
+  font-variant: small-caps;
+  font-weight: 600;
+}

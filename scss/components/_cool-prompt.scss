@@ -1,0 +1,24 @@
+@use '../var';
+
+.cool-prompt {
+  padding: 24px;
+  width: max-content;
+
+  color: rgb(255 255 255);
+  background-color: rgb(67, 67, 67);
+  border-radius: 0 0 var.$border-radius var.$border-radius;
+}
+
+.cool-prompt__heading {
+  margin: 0 0 4px;
+
+  color: var.$orange;
+  text-transform: uppercase;
+}
+
+.cool-prompt__form {
+  display: flex;
+  gap: 16px;
+
+  margin-top: 24px;
+}
