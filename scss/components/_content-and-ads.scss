@@ -33,12 +33,15 @@
 @media(min-width: 800px) {
   .content-and-ads {
     display: flex;
-    align-items: flex-start;
     gap: 24px;
   }
 
   .content-and-ads__content {
     grid-template-columns: auto;
+  }
+
+  .content-and-ads__ads {
+    align-content: start;
   }
 }
 

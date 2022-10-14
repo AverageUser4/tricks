@@ -1,0 +1,19 @@
+@use '../var';
+
+.named-list {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+
+  margin: 24px 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.named-list__name {
+  text-transform: uppercase;
+  color: var.$orange;
+  font-weight: bold;
+  font-family: Primer;
+}

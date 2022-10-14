@@ -1,12 +1,30 @@
 @use '../var';
 
 .cool-prompt {
+  position: relative;
+  margin-top: -48px;
+
   padding: 24px;
-  width: max-content;
 
   color: rgb(255 255 255);
   background-color: rgb(67, 67, 67);
   border-radius: 0 0 var.$border-radius var.$border-radius;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: -20px;
+
+    width: 0;
+    height: 0;
+
+    border-width: 24px 10px;
+    border-color: transparent rgb(144, 144, 144) rgb(144, 144, 144) transparent;
+    border-style: solid;
+  }
+
 }
 
 .cool-prompt__heading {
@@ -21,4 +39,28 @@
   gap: 16px;
 
   margin-top: 24px;
+
+  & > :nth-child(1) {
+    width: 65%;
+  }
+
+  & > :nth-child(2) {
+    width: 35%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media(min-width: 800px) {
+  .cool-prompt__form {
+    & > :nth-child(1),
+    & > :nth-child(2) {
+      width: auto;
+    }
+
+    & > :nth-child(2) {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+  }
 }

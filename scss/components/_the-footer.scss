@@ -3,3 +3,40 @@
 .the-footer {
   background-color: rgb(17, 17, 17);
 }
+
+.the-footer-content {
+  max-width: var.$max-width;
+  margin: auto;
+  padding: 0 24px 24px;
+}
+
+.the-footer__top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap-reverse;
+  gap: 32px;
+
+  margin-bottom: 48px;
+}
+
+.the-footer__bottom {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+@media(min-width: 800px) {
+  .the-footer__top {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 64px;
+  }
+}
+
+@media(min-width: 940px) {
+  .the-footer__bottom {
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+    gap: 128px;
+  }
+}

@@ -3,12 +3,18 @@
 .website-content {
   max-width: var.$max-width;
   margin: auto;
-  padding: 16px 16px 128px;
+  padding: 16px 16px 256px;
+
+  background-image: url('../images/icons/star.webp');
+  background-repeat: no-repeat;
+  background-position: right 80px bottom -15px;
 }
 
 @media(min-width: 800px) {
   .website-content {
-    padding: 32px 24px 128px;
+    padding: 32px 24px 256px;
+
+    background-position: left 20px bottom -50px;
   }
 }
 

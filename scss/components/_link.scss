@@ -24,3 +24,12 @@
 .link--color-5 {
   color: rgb(67 67 67);
 }
+
+.link--color-6 {
+  color: rgb(169 163 159);
+
+  &:hover {
+    opacity: 1;
+    color: rgb(255 255 255);
+  }
+}
