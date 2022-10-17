@@ -1,0 +1,31 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  padding-top: 24px;
+
+  color: rgb(169 163 159);
+  font-family: Primer;
+  text-transform: uppercase;
+}
+
+.pagination__older-link {
+  position: relative;
+
+  &::after {
+    content: '';
+  
+    position: absolute;
+    top: -1px;
+    right: -23px;
+  
+    width: 10.4px;
+    height: 20px;
+  
+    background-image: url('../images/icons/fancy-arrow-down.svg');
+
+    transform: rotateZ(-90deg);
+    pointer-events: none;
+  }
+}

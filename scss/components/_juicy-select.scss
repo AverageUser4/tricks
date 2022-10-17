@@ -1,0 +1,49 @@
+@use '../var';
+
+.juicy-select-container {
+  position: relative;
+
+  width: 200px;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: 11.5px;
+    right: 16px;
+  
+    width: 10.4px;
+    height: 20px;
+  
+    background-image: url('../images/icons/fancy-arrow-down.svg');
+
+    pointer-events: none;
+  }
+}
+.juicy-select-container--small {
+  width: 125px;
+}
+
+.juicy-select {
+  padding: 12px 16px;
+  width: 100%;
+
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Primer;
+  color: rgb(255 255 255);
+  background-color: rgb(0 0 0);
+  border: none;
+  border-radius: var.$border-radius;
+
+  // remove arrow
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:hover {
+    outline: 3px solid rgb(0 0 0);
+  }
+}
+.juicy-select--fancy {
+  border: 2px solid rgb(94 94 94);
+}

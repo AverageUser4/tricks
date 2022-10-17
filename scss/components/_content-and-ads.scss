@@ -5,10 +5,8 @@
   padding: 48px 0;
 }
 
-.content-and-ads__content {
-  & > .button {
-    grid-column: 1 / -1;
-  }
+.content-and-ads__special-content-item {
+  grid-column: 1 / -1;
 }
 
 .content-and-ads__ads {

@@ -1,0 +1,28 @@
+@use '../var';
+
+.simple-dropdown {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1;
+
+  padding: 16px;
+
+  border-radius: var.$border-radius;
+  background-color: rgb(67 67 67);
+  color: rgb(255 255 255);
+}
+.simple-dropdown--active {
+  display: block;
+}
+
+.simple-dropdown__element {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px 16px;
+
+  padding: 4px 0 4px 24px;
+}

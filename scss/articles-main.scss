@@ -4,6 +4,7 @@
 @use 'components/input';
 @use 'components/link';
 @use 'components/logo';
+@use 'components/text-alike-button';
 
 @use 'components/basic-nav';
 @use 'components/cool-prompt';
@@ -20,5 +21,8 @@
 @use 'components/article-preview';
 @use 'components/author';
 @use 'components/content-and-ads';
-@use 'components/fancy-cards';
+@use 'components/general-info';
+@use 'components/juicy-select';
+@use 'components/simple-dropdown';
+@use 'components/pagination';
 

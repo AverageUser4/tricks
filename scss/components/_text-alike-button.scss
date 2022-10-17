@@ -1,0 +1,14 @@
+.text-alike-button {
+  display: inline;
+  padding: 0;
+
+  font-size: 1em;
+  font-family: inherit;
+  color: currentColor;
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

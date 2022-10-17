@@ -11,6 +11,10 @@
   font-size: 48px;
 }
 
+.heading--jumbo {
+  font-size: 58px;
+}
+
 .heading--small {
   font-size: 22px;
 }
@@ -19,11 +23,23 @@
   color: rgb(255, 255, 255);
 }
 
+.heading--shadow {
+  text-shadow:rgba(0, 0, 0, 0.5) 0px 3px 3px;
+}
+
 .heading--fancy {
   font-weight: normal;
   font-family: Blanco, serif;
 }
 
+.heading--uppercased {
+  text-transform: uppercase;
+}
+
 .heading--no-margin {
   margin: 0;
+}
+
+.heading--even-margin {
+  margin: 0.6em 0;
 }
