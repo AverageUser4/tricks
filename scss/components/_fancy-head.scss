@@ -1,0 +1,14 @@
+@use '../var';
+
+.fancy-head {
+  padding: 16px 24px;
+  height: 150px;
+
+  background-color: rgb(255 255 255);
+  border-bottom: 5px solid var.$dark-orange;
+  border-radius: var.$border-radius var.$border-radius 0 0;
+}
+
+.fancy-head--color-2 {
+  border-bottom: 5px solid var.$purple;
+}

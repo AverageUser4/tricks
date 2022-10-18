@@ -2,7 +2,15 @@
   display: grid;
   gap: 32px;
 
-  padding: 48px 0;
+  margin: 48px 0;
+}
+
+.content-and-ads__slim-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  
+  width: 100%;
 }
 
 .content-and-ads__special-content-item {
@@ -31,6 +39,7 @@
 @media(min-width: 800px) {
   .content-and-ads {
     display: flex;
+    justify-content: space-between;
     gap: 24px;
   }
 

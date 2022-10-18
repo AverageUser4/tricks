@@ -93,7 +93,7 @@
 
           <?php echo str_repeat(file_get_contents('components/template-article-previews.html'), 4); ?>
 
-          <button class="button content-and-ads__special-content-item">Keep browsing in the Archives</button>
+          <button class="button button--block content-and-ads__special-content-item">Keep browsing in the Archives</button>
 
         </div>
 

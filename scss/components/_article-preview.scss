@@ -1,6 +1,9 @@
 @use '../var';
 
 .article-preview {
+  display: flex;
+  flex-direction: column;
+
   margin: 32px 0;
 
   background-color: rgb(255, 255, 255);
@@ -21,17 +24,34 @@
   object-fit: cover;
   object-position: center;
 }
+.article-preview__image--interactive {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.article-preview__image--small {
+  height: 200px;
+}
 
 .article-preview-text-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  flex-grow: 1;
+
+  font-size: clamp(14px, 3vw, 17px);
   padding: 20px;
   color: rgb(71, 71, 71);
+}
+.article-preview-text-part--dark-text {
+  color: rgb(0 0 0);
 }
 
 .article-preview__text {
   margin-bottom: 24px;
 
-  font-size: 17px;
-  line-height: 180%;
+  line-height: 160%;
 }
 
 .article-preview--big {

@@ -11,17 +11,16 @@
   padding: 16px;
 
   background-color: rgba(0 0 0 / 0.33);
+  color:rgb(255, 255, 255);
   border-radius: var.$border-radius;
 }
 
 .general-info__right {
   flex-shrink: 0;
-
+  
+  font-size: 18px;
   padding-right: 8px;
   width: max-content;
-
-  font-size: 18px;
-  color:rgb(255, 255, 255);
 }
 
 .general-info__button {

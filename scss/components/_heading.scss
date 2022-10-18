@@ -1,35 +1,48 @@
+@use '../var';
+
 .heading {
   margin: 0.3em 0 0.6em 0;
 
-  font-size: 32px;
+  font-size: clamp(24px, 3vw, 32px);
   line-height: 115%;
   font-family: Primer, sans-serif;
   color: rgb(0, 0, 0);
 }
 
 .heading--huge {
-  font-size: 48px;
+  font-size: clamp(32px, 4vw, 48px);
 }
 
 .heading--jumbo {
-  font-size: 58px;
+  font-size: clamp(42px, 5vw, 58px);
 }
 
 .heading--small {
-  font-size: 22px;
+  font-size: clamp(16px, 2vw, 24px);
 }
 
 .heading--color-2 {
   color: rgb(255, 255, 255);
 }
 
+.heading--color-3 {
+  color: var.$dark-orange;
+}
+
+.heading--color-4 {
+  color: var.$purple;
+}
+
 .heading--shadow {
   text-shadow:rgba(0, 0, 0, 0.5) 0px 3px 3px;
 }
 
-.heading--fancy {
-  font-weight: normal;
+.heading--serif {
   font-family: Blanco, serif;
+}
+
+.heading--not-bold {
+  font-weight: normal;
 }
 
 .heading--uppercased {
@@ -38,6 +51,10 @@
 
 .heading--no-margin {
   margin: 0;
+}
+
+.heading--no-top-margin {
+  margin-top: 0;
 }
 
 .heading--even-margin {
